@@ -1,0 +1,24 @@
+/.fleet
+/.idea
+/.vs
+/.vscode
+c\.vscode
+
+# Exe Files#
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+*.bin
+*.elf
+*.so
+*.o
+*.a
+*.lib
+*.dll
+*.pdb
+
+*.class
+*.obj

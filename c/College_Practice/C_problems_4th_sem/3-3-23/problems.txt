@@ -1,0 +1,8 @@
+DONE :  1. Write a C program to print all Prime numbers between 1 to n using call by value.
+DONE :  2. Write a C program to check whether a number is Armstrong number or not using call by value.
+DONE :  3. Write a C program to find value of sin series using call by value.
+DONE :  4. Write a C program to convert lowercase string to uppercase string and vice versa using call by reference.
+DONE :  5. Write a C program to concatenate two strings using call by reference.
+DONE :  6. Write a C program to find the Fibonacci series up to n term using recursive function.
+DONE :  7. Write a C program to find power of any number using recursive function.
+DONE :  8. Write a C Program to read an array of names and to set them in alphabetical order.

@@ -1,0 +1,32 @@
+Write a python program to find area, volume, perimeter of all following geometrical shapes
+1. Circle
+2. Square
+3. Rectangle
+4. Triangle
+5. Cube
+6. Cuboid
+7. Sphere
+8. Cylinder
+9. Cone
+10. Pyramid
+11. Trapezium
+12. Parallelogram
+13. Rhombus
+14. Ellipse
+
+
+Write a python program to fconvert the physical units
+1. Convert temperature from fahrenheit to celsius
+2. Inches to feet 
+3. Kg to grams, mili grams
+4. Newton to dyne
+5. Joule to erg
+6. Pascal to bar
+7. Watt to horsepower
+8. Meter per second to km per hour
+9. Meter per second to mile per hour
+
+Write a python program to find the largest among two numbers given by user
+
+# lakhanmahatomahato118@gmail.com
+# 6295939450

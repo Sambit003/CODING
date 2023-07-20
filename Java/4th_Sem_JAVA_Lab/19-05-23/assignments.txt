@@ -1,0 +1,3 @@
+1. Calculate area of a rectangle and a circle using the abstract class.
+2. WAP to prove that interface supports full abstraction in java.
+3. WAP to prove that interface overcomes the problem of multiple inheritance partially.

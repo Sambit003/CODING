@@ -1,0 +1,18 @@
+1. Write a Python program to print natural numbers from 1 to n and also print their sum.
+2. Write a Python program to check whether a number is palindrome or not
+3. Write a Python program to find all factors of a number.
+4. Write a Python program to calculate factorial of a number
+5. Write a Python program to check whether a number is Prime number or not.
+6. Write a Python program to check whether a number is Armstrong number or not.
+7. Write a Python program to print Fibonacci series up to n terms.
+8. Write a Python program to count number of digits in a number and also their sum and product.
+9. Write a Python program to print all odd and even numbers between 1 to n and also print their sum.
+10. Write a Python program to find power of a number.
+11. Write a Python program to print all Prime numbers between 1 to n using function.
+12. Write a Python program to check whether a number is Armstrong number or not using function.
+13. Write a Python program to find value of sin series using function.
+14. Write a Python program to convert lowercase string to uppercase string and vice versa using function.
+15. Write a Python program to concatenate two strings using function.
+16. Write a Python program to find the Fibonacci series up to n term using recursive function.
+17. Write a Python program to find power of any number using recursive function.
+18. Write a Python Program to read an array of names and to set them in alphabetical order using function.

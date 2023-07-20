@@ -1,0 +1,20 @@
+FUNCTION IMPLEMENTATION 
+    Write python program to use 4 types of Functions for following operations:
+        1. Largest of 3 numbers
+        2. Factorial
+        3. Palindrome check of a number
+
+
+WHILE LOOP IMPLEMENTATION
+Write python program to implement while loop on following:
+    1. Fibonacci series
+    2. Factorial
+    3. Prime number
+    4. Armstrong number
+    5. Strong number
+    6. Perfect number
+Write a program to print the following pattern
+
+
+EXPERIMENT WITH TKINTER
+Write tkinter program to change the icon of the window.

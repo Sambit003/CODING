@@ -1,0 +1,10 @@
+DONE :  1.  Write a C program to find maximum and minimum element in an array (without sorting).
+DONE :  2.  Write a C Program to count the frequency of array elements in a 1-D array
+DONE :  3.  Write a C program to add two matrices of order M × N.
+DONE :  4.  Write a C program to check whether a string is palindrome or not (using single string only).
+DONE :  5.  Write a C program to copy one array to another using pointers.
+DONE :  6.  Write a C program to reverse an array using pointers.
+DONE :  7.  Write a C Program to swap two given numbers using call by reference.
+DONE :  8.  Write a C program to find length of a string using call by reference.
+DONE :  9.  Write a C program to copy one string to another using call by reference.
+10. Write a C program to reverse a string using call by reference.

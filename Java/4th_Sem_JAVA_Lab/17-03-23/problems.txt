@@ -1,0 +1,6 @@
+Complete the following programs using objects
+    1. Simple Interest
+    2. Area of a circle
+    3. Odd Even Check
+    4. Factorial of a number
+    5. Fibonacci series
