@@ -1,0 +1,9 @@
+/*WAP in C++ for solving the following problems
+ * 1. Add two numbers
+ * 2. prime number
+ * 3. palindrome
+ * 4. factorial
+ * 5. fibonacci
+ * 6. leap year
+ * 7. power of a number
+ */

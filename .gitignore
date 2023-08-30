@@ -22,3 +22,4 @@ c\.vscode
 
 *.class
 *.obj
+.fake
