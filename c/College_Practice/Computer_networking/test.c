@@ -7,6 +7,7 @@ char XOR(char a, char b) {
     return (a == b) ? '0' : '1';
 }
 
+
 // Function to perform XOR division and return the remainder
 char* XORDivision(char* dividend, char* divisor) {
     int dividendLength = strlen(dividend);
@@ -40,7 +41,7 @@ int main() {
     printf("Divisor:  %s\n", divisor);
     printf("Remainder: %s\n", remainder);
 
-    free(remainder); // Free dynamically allocated memory
+    free(remainder); // Free dynamically allocated memory to avoid memory leak
 
     return 0;
 }
