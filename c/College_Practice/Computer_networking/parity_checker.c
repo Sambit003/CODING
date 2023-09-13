@@ -2,36 +2,38 @@
 
 #include<stdio.h>
 #include<stdlib.h>
-#include<stdbool.h>
 #include<string.h>
 
-bool check_parity(char *data){
-    int count=0;
-    for(int i=0; i<strlen(data); i++){
+char calculate_parity(char *data){
+    char parity = '0';
+    for(int i=0; i<strlen(data)-1; i++){
         if(data[i] == '1')
-            count++;
+            //XOR operation
+            parity = (parity == '0') ? '1' : '0';
     }
-    if(count%2 == 0)
-        return true;
-    else
-        return false;
+    return parity;
 }
 
 int main(){
-    char *data=NULL; int n, count=0;
-    printf("\n\tEnter the number of bits in data word [in binary]: ");
+    char *data=NULL, received_bit; int n;
+    printf("\n\tEnter the size of data word: ");
     scanf("%d", &n);
 
-    data = (char *)calloc(n, sizeof(char));
+    data = (char *)calloc(n+1, sizeof(char));
 
-    printf("\n\tEnter the data word: ");
+    printf("\n\tEnter the data word [in binary]: ");
     fflush(stdin);
     gets(data);
 
-    if(check_parity(data))
-        printf("\n\tThe data word is correct!");
+    printf("\n\tEnter the received bit: ");
+    fflush(stdin);
+    scanf("%c", &received_bit);
+
+    char parity = calculate_parity(data);
+    if(parity == received_bit)
+        printf("\n\tNo error detected\n");
     else
-        printf("\n\tThe data word is incorrect!");
+        printf("\n\tError detected\n");
 
     free(data); data = NULL;
     return 0;

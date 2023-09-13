@@ -1,0 +1,9 @@
+SCOPE RESOLUTION OPERATOR IN C++
+
+WRITE PROGRAMS TO DEMONSTRATE THE USE OF SCOPE RESOLUTION OPERATOR IN C++
+1. To access global variable when there is a local variable with same name
+2. To define a function outside a class
+3. To access a class’s static variables
+4. Multiple Inheritance
+5. For namespace
+6. For nested classes
