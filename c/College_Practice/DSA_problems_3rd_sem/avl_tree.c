@@ -128,7 +128,7 @@ node *left_rotate(node *x) {
 
 node* insert(node* root, int data) {
     if (root == NULL) {
-        node* newNode = (node*)malloc(sizeof(node));
+        node* newNode = (node*)calloc(1, sizeof(node));
         newNode->data = data;
         newNode->left_child = newNode->right_child = NULL;
         newNode->height = 1;
