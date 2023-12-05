@@ -1,37 +1,24 @@
-#include<stdio.h>
-#define size 5
-int CheckSame(int* arr, int num)
-{
-    int count = 0;
-    for (int i = 1; i <= (num - 1); i++)
-    {
-        if (arr[i] == arr[i - 1])
-        {
-            count++;
-        }
+#include <stdio.h>
+
+int main() {
+    int num1, num2, gcd, lcm;
+
+    printf("Enter two positive integers: ");
+    scanf("%d %d", &num1, &num2);
+
+    int a = num1, b = num2;
+
+    while(b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
     }
-    if (count == (num - 1))
-    {
-        return (num-1);
-    }
-    return 0;
-}
-int main()
-{
-    int num,status;
-    printf("UPTO:");
-    scanf("%d",&num);
-    int a[size];
-    for (int i = 1; i <=num; i++)
-    {
-        printf("a[%d]:",i);
-        scanf("%d",&a[i]);
-        printf("\n");
-    }
-    status=CheckSame(a,num);
-    if (status>0)
-    {
-        printf("%d",status);
-    }   
+
+    gcd = a;
+    lcm = (num1 * num2) / gcd;
+
+    printf("GCD of the given numbers is: %d\n", gcd);
+    printf("LCM of the given numbers is: %d\n", lcm);
+
     return 0;
 }
