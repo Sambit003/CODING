@@ -10,6 +10,8 @@ int lengthCalc(char *str){
     return i;
 }
 
+void gets(char * str);
+
 int main(){
     char str[SIZE];
     
