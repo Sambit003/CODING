@@ -23,5 +23,5 @@ c\.vscode\
 *.class
 *.obj
 .fake
-*.log!
-!/cmake-build-debug/
+*.log/*
+/cmake-build-debug/
