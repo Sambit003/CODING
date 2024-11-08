@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.29)
 project(CODING)
 
 set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 add_executable(CODING
     c/College_Practice/Array_problems_3rd_sem/1D_Array_BinSearch.c
