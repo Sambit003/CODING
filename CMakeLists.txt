@@ -198,4 +198,6 @@ add_executable(CODING
     c++/power_of_num.cpp
     c++/practice2.cpp
     c++/prime_check.cpp
-    c++/test.cpp)
+    c++/test.cpp
+        c/RAII/raii_demo.c
+)

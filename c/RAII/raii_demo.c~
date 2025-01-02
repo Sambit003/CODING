@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+// Structure to represent a file resource
+typedef struct {
+    FILE *filePtr;
+} FileResource;
+
+// Constructor-like function to initialize the resource
+FileResource* acquireFile(const char *filename) {
+    FileResource *resource = (FileResource *)malloc(sizeof(FileResource));
+    if (resource == NULL) {
+        return NULL; // Allocation failed
+    }
+
+    resource->filePtr = fopen(filename, "w");
+    if (resource->filePtr == NULL) {
+        free(resource);
+        return NULL; // File opening failed
+    }
+
+    return resource;
+}
+
+// Destructor-like function to release the resource
+void releaseFile(FileResource *resource) {
+    if (resource != NULL) {
+        if (resource->filePtr != NULL) {
+            fclose(resource->filePtr);
+        }
+        free(resource);
+    }
+}
+
+int main() {
+    // Resource acquisition
+    FileResource *myFile = acquireFile("my_file.txt");
+    if (myFile == NULL) {
+        fprintf(stderr, "Error acquiring file resource.\n");
+        return 1;
+    }
+
+    // Use the resource
+    fprintf(myFile->filePtr, "Writing to the file using RAII.\n");
+
+    // Resource is automatically released when 'myFile' goes out of scope
+    releaseFile(myFile); // Explicit release for demonstration
+
+    return 0;
+}

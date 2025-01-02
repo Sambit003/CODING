@@ -25,3 +25,5 @@ c\.vscode\
 .fake
 *.log/*
 /cmake-build-debug/
+/build/
+/.cache/
