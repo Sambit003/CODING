@@ -1,3 +1,41 @@
+/**
+ * StreamGathererDemo.java
+ *
+ * This demo showcases the Stream API in Java, with a focus on the new Stream Gatherer feature introduced in JDK 24.
+ *
+ * Goal:
+ * The primary goal of this demo is to illustrate how Stream Gatherers can be used to perform complex
+ * intermediate operations on streams in a more efficient and readable manner compared to traditional
+ * stream operations. It provides practical examples of custom gatherers and demonstrates how they can
+ * be combined with existing stream operations to solve common data processing tasks.
+ *
+ * Definition of Stream in Java:
+ * A stream in Java is a sequence of elements supporting sequential and parallel aggregate operations.
+ * Streams are lazy and evaluate elements only when needed. They do not store elements and operate on
+ * the source data without modifying it. Streams can be created from various sources, such as collections,
+ * arrays, or I/O channels.
+ *
+ * Stream API Improvements from JDK 23 to JDK 24:
+ * JDK 24 introduces the Stream Gatherer API, which enhances the Stream API by providing a new
+ * mechanism for performing stateful intermediate operations. Gatherers allow developers to define
+ * custom stream operations that can maintain state, process elements in batches, and transform streams
+ * in more flexible ways.
+ *
+ * Key improvements in JDK 24 Stream API:
+ * 1. Introduction of the Gatherer interface: A new interface that defines the contract for custom
+ *    intermediate operations.
+ * 2. Built-in Gatherers: The Gatherers class provides several pre-built gatherers for common operations,
+ *    such as folding, scanning, and grouping.
+ * 3. Enhanced flexibility: Gatherers enable more complex stream transformations that were previously
+ *    difficult or impossible to achieve with traditional stream operations.
+ * 4. Improved performance: Gatherers can optimize stream processing by reducing the number of
+ *    intermediate objects created and by processing elements in batches.
+ *
+ * This demo provides examples of:
+ * - Creating custom gatherers for grouping and limiting elements.
+ * - Using built-in gatherers for folding and scanning operations.
+ * - Comparing the performance and readability of gatherers with traditional stream operations.
+ */
 package jdk_24_update_demo;
 
 import java.time.LocalDate;
@@ -6,9 +44,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 import java.util.function.Function;
-import java.util.function.Supplier;
 import java.util.stream.Gatherer;
 import java.util.stream.Gatherers;
 
