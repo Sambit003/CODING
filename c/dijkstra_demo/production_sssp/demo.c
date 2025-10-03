@@ -321,7 +321,7 @@ int main(int argc, char* argv[]) {
         }
     }
     
-    // Configure logging - use simple approach since constants might not exist
+    // Configure logging
     printf("=== Production SSSP Algorithm Demo ===\n");
     printf("Based on: Breaking the Sorting Barrier for Directed Single-Source Shortest Paths\n\n");
     
@@ -329,7 +329,6 @@ int main(int argc, char* argv[]) {
     sssp_graph_t* graph = NULL;
     if (graph_file) {
         printf("Loading graph from file: %s\n", graph_file);
-        // Note: sssp_graph_load_from_file might not be implemented
         fprintf(stderr, "File loading not yet implemented\n");
         return 1;
     } else if (gen_vertices > 0) {
